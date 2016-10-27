@@ -36,9 +36,13 @@ class Southwest
         end
       end
     else
-      # Submit Next page!
+      check_in
     end
 
+  end
+
+  def check_in
+    @agent.page.form_with(name: "printDocumentsButton").submit
   end
 
   def resubmit_form(page)

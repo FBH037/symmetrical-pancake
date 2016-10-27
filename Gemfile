@@ -59,6 +59,8 @@ group :development, :test do
   gem 'better_errors'
   gem 'quiet_assets'
 
+  gem "capistrano", "~> 3.6"
+
   #binding.pry
   gem 'byebug'
   gem 'pry-rails'
